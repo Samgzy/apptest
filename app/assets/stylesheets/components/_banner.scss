@@ -34,6 +34,36 @@
   color: white;
 &:hover{
   color: white;
-
   }
 }
+.navbar-wagon-home {
+  box-shadow: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  width: 100%;
+  .navbar-wagon-link {
+    color: white;
+  }
+  .navbar-wagon-link:hover {
+    color: #da552f;
+  }
+  .btn-medium {
+    color: white;
+    border: 1px solid white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  .btn-medium:hover {
+    opacity: 1;
+    text-decoration: none;
+    color: #999999;
+    border: 1px solid #999999;
+  }
+  .badge-container {
+    color: white;
+  }
+  }
+
