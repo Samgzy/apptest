@@ -1,1 +1,17 @@
-// Your footer style
+.footer {
+  background-color: #333;
+  height: 120px;
+  i {
+  font-size: 25px;
+  color: #E6E6E6;
+  padding: 10px 10px;
+  }
+  p {
+    text-align: center;
+    color: #E6E6E6;
+    padding-top: 40px;
+  }
+}
+.inline i:hover{
+  color: $orange;
+}

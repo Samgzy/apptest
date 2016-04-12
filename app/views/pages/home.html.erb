@@ -1,37 +1,46 @@
-<div class="banner ig-rise" style="background: url(<%= image_url('home.jpg') %>);">
+<div class="banner ig-mayfair" style="background: url(<%= image_url('home.jpg') %>);">
   <%= render 'shared/navbar' %>
   <div class="banner-content">
     <h1> Bienvenue sur Photo Market </h1>
     <a href="#block1" class="banner-arrow"><i class="fa fa-angle-double-down"></i></a>
   </div>
 </div>
-<div class="container" id="block1">
-  <div class="row">
-    <h2 class="text-center">Comment cela fonctionne ?</h2>
-    <div class="col-sm-4"></div>
-    <div class="col-sm-4"></div>
-    <div class="col-sm-4"></div>
+<div class="wrapper-grey">
+  <div class="container" id="block1">
+    <div class="row">
+      <h2 class="text-center">Comment cela fonctionne ?</h2>
+    </div>
+    <div class="row marged">
+      <div class="col-sm-4">
+        <p class="text-center"><%= image_tag 'gallery.svg', :class => 'img-home' %></p>
+        <p>Vous choisissez la photographie sur laquelle vous avez flashé sur notre site</p>
+      </div>
+      <div class="col-sm-4">
+        <p class="text-center"> <%= image_tag 'size.svg', :class => 'img-home' %> </p>
+        <p>Vous sélectionnez parmi les nombreux formats disponibles pour l'impression</p>
+      </div>
+      <div class="col-sm-4">
+        <p class="text-center"> <%= image_tag 'truck.svg', :class => 'img-home' %> </p>
+        <p>Nous vous livrons gratuitement l'oeuvre choisie et vous offrons le retour si vous n'êtes pas satisfait</p>
+      </div>
+    </div>
   </div>
 </div>
-<div id="block2">
-  <div>
-    <h2>S'inscrire</h2>
-
-<%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= f.error_notification %>
-
-  <div class="form-inputs">
-    <%= f.input :email, required: true, autofocus: true %>
-    <%= f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length) %>
-    <%= f.input :password_confirmation, required: true %>
-  </div>
-
-  <div class="form-actions">
-    <%= f.button :submit, "Sign up" %>
-  </div>
-<% end %>
-
-<%= render "devise/shared/links" %>
-
+<div class="container" id="block2">
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2">
+      <h3>S'inscrire</h3>
+        <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+        <%= f.error_notification %>
+      <div class="form-inputs">
+        <%= f.input :email, required: true, autofocus: true %>
+        <%= f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length) %>
+        <%= f.input :password_confirmation, required: true %>
+      </div>
+      <div class="form-actions">
+        <%= f.button :submit, "Sign up" %>
+      </div>
+    </div>
+    <% end %>
   </div>
 </div>
