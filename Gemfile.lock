@@ -62,6 +62,8 @@ GEM
       responders
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
+    devise-i18n (1.0.0)
+    devise-i18n-views (0.3.7)
     erubis (2.7.0)
     execjs (2.6.0)
     figaro (1.1.1)
@@ -184,6 +186,8 @@ DEPENDENCIES
   binding_of_caller
   bootstrap-sass
   devise
+  devise-i18n
+  devise-i18n-views
   figaro
   font-awesome-sass
   jbuilder (~> 2.0)
