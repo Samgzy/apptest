@@ -2,3 +2,13 @@
  * CSS code specific to home page
  * (margin/padding adjustments)
  * ------------------------------------- */
+.Site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: #EDEFED;
+}
+
+.Site-content {
+  flex: 1;
+}
