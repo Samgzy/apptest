@@ -1,17 +1,18 @@
 .footer {
-  background-color: #333;
+  background-color: #222222;
   height: 120px;
+  color: #fff;
+  position: relative;
   i {
   font-size: 25px;
-  color: #E6E6E6;
   padding: 10px 10px;
   }
-  p {
-    text-align: center;
-    color: #E6E6E6;
-    padding-top: 40px;
-  }
 }
-.inline i:hover{
-  color: $orange;
+.inline{
+  position: absolute;
+  right: 30px;
+  top: 30px;
+& i:hover{
+  color: $red;
+  }
 }

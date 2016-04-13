@@ -1,44 +1,73 @@
-<div class="banner ig-mayfair" style="background: url(<%= image_url('home.jpg') %>);">
+<div class="banner ig-amaro" style="background: url(<%= image_url('home.jpg') %>);">
   <%= render 'shared/navbar' %>
   <div class="banner-content">
-    <h1> Bienvenue sur Photo Market </h1>
-    <a href="#block1" class="banner-arrow"><i class="fa fa-angle-double-down"></i></a>
+    <h1>Bienvenue sur Photo Market.</h1>
+    <h2>Votre galerie d'art en ligne.</h2>
   </div>
+    <a href="#block1" class="banner-arrow"><i class="fa fa-angle-down"></i></a>
 </div>
-<div class="wrapper-grey">
+<div class="wrapper-grey padded">
   <div class="container" id="block1">
     <div class="row">
-      <h2 class="text-center">Comment cela fonctionne ?</h2>
+      <h2 class="text-center">COMMENT CELA FONCTIONNE ?</h2>
     </div>
     <div class="row marged">
       <div class="col-sm-4">
         <p class="text-center"><%= image_tag 'gallery.svg', :class => 'img-home' %></p>
-        <p>Vous choisissez la photographie sur laquelle vous avez flashé sur notre site</p>
+        <p>Vous choisissez une photographie proposée par un des artistes au sein notre galerie.</p>
       </div>
       <div class="col-sm-4">
-        <p class="text-center"> <%= image_tag 'size.svg', :class => 'img-home' %> </p>
-        <p>Vous sélectionnez parmi les nombreux formats disponibles pour l'impression</p>
+        <p class="text-center"> <%= image_tag 'size.svg', :class => 'img-home ' %> </p>
+        <p>Vous sélectionnez la taille de votre cadre parmi les nombreux formats disponibles pour l'impression.</p>
       </div>
       <div class="col-sm-4">
         <p class="text-center"> <%= image_tag 'truck.svg', :class => 'img-home' %> </p>
-        <p>Nous vous livrons gratuitement l'oeuvre choisie et vous offrons le retour si vous n'êtes pas satisfait</p>
+        <p>Nous vous livrons gratuitement l'oeuvre choisie et vous offrons le retour si vous n'êtes pas satisfait.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="row ">
+    <div class="col-sm-5">
+      <div class="adjust">
+        <h3 class="text-center">NOS PHOTOGRAPHES</h3><br>
+        <p>Garants de la qualité de notre service, ils sont soigneusement sélectionnés par nos équipes et ont fait d'une passion leur métier.</p>
+        <p>Vous êtes photographe et souhaitez participer à l'aventure ?</p>
+      </div>
+    </div>
+      <div class="col-sm-7 photo img-responsive ig-mayfair hidden-xs" style="background: url(<%= image_url('photographer.jpg') %>);">
+    </div>
+  </div>
+</div>
+<div class="wrapper-grey">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-7 photo img-responsive ig-mayfair hidden-xs " style="background: url(<%= image_url('gallery.jpg')%>);"></div>
+      <div class="col-sm-5">
+        <div class="adjust">
+          <h3 class="text-center">NOTRE SERVICE</h3><br>
+          <p>Nous souhaitons vous faire accéder à l'art de la photographie à travers des galeries enrichies chaque jour par nos artistes.</p>
+          <p>Ils sont soigneusement séléctionnés pour leur qualité d'expression artistique.</p>
+          <p>Vous pouvez choisir lors de votre achat le format du tirage selon le nombre d'exemplaires disponibles.</p>
+          <p>Vous recevez un certificat d'authenticité délivré par le laboratoire et l'artiste.</p>
+       </div>
       </div>
     </div>
   </div>
 </div>
 <div class="container" id="block2">
-  <div class="row">
-    <div class="col-sm-8 col-sm-offset-2">
-      <h3>S'inscrire</h3>
+  <div class="row marged">
+    <div class="col-sm-6 col-sm-offset-3">
+      <h3>NE RATEZ PAS NOTRE LANCEMENT !</h3>
         <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
         <%= f.error_notification %>
       <div class="form-inputs">
         <%= f.input :email, required: true, autofocus: true %>
         <%= f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length) %>
-        <%= f.input :password_confirmation, required: true %>
       </div>
       <div class="form-actions">
-        <%= f.button :submit, "Sign up" %>
+        <%= f.button :submit, "Je m'inscris !" %>
       </div>
     </div>
     <% end %>

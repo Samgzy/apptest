@@ -19,10 +19,21 @@
     margin-bottom: 20px;
   }
 }
+.banner-content{
+  position: absolute;
+  bottom: 150px;
+  left: 0;
+  right: 0;
+}
+.ig-amaro {
+  -webkit-filter: hue-rotate(-10deg) contrast(0.9) brightness(1.1) saturate(1.5);
+  filter: hue-rotate(-10deg) contrast(0.9) brightness(1.1) saturate(1.5);
+}
 .ig-mayfair {
   -webkit-filter: saturate(1.4) contrast(1.1);
   filter: saturate(1.4) contrast(1.1);
 }
+
 .banner-arrow {
   position: absolute;
   margin: auto;
@@ -32,6 +43,7 @@
   font-size: 50px;
   margin: 0 auto;
   color: white;
+
 &:hover{
   color: white;
   }
@@ -49,24 +61,7 @@ color: white;
 .navbar-wagon-link:hover {
   color: #da552f;
   }
-.btn-medium {
-  color: white;
-  border: 1px solid white;
-  padding: 10px 15px;
-  border-radius: 5px;
-  font-size: 14px;
-  }
-.btn-medium:hover {
-  opacity: 1;
-  text-decoration: none;
-  color: #999999;
-  border: 1px solid #999999;
-  }
 .badge-container {
   color: white;
   }
-}
-.img-home{
-  width: 140px;
-  height: 140px;
 }
