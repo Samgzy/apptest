@@ -2,3 +2,36 @@
  * CSS code specific to home page
  * (margin/padding adjustments)
  * ------------------------------------- */
+.Site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: #EDEFED;
+}
+
+.Site-content {
+  flex: 1;
+}
+.wrapper-grey {
+  background: #F9F9F9;
+}
+.marged{
+  margin-top: 30px;
+  padding: 140px 0;
+}
+.img-home{
+  width: 160px;
+  height: 160px;
+}
+.photo{
+  background-size: cover !important;
+  height: 530px;
+}
+.adjust{
+  padding-top: 65px;
+  padding-left: 30px;
+}
+.align{
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
