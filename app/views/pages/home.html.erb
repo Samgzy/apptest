@@ -14,10 +14,10 @@
     <div class="row marged">
       <div class="col-sm-4">
         <p class="text-center"><%= image_tag 'gallery.svg', :class => 'img-home' %></p>
-        <p>Vous choisissez une photographie proposée par un des artistes au sein notre galerie.</p>
+        <p>Vous choisissez une photographie proposée par un des artistes au sein de notre galerie.</p>
       </div>
       <div class="col-sm-4">
-        <p class="text-center"> <%= image_tag 'size.svg', :class => 'img-home ' %> </p>
+        <p class="text-center"> <%= image_tag 'size.svg', :class => 'img-home' %> </p>
         <p>Vous sélectionnez la taille de votre tirage parmi les nombreux formats disponibles pour l'impression.</p>
       </div>
       <div class="col-sm-4">
@@ -71,7 +71,7 @@
       </div>
       <div class="form-group">
         <%= f.input :is_photograph, as: :radio_buttons, collection: [['Client', false],
-        ['Photographe', true]], label: 'Vous êtes intéressé par notre plateforme entant que :' %>
+        ['Photographe', true]], label: 'Vous êtes intéressé par notre plateforme en tant que :' %>
       </div>
       <div class="form-group">
         <%= f.input :email, required: true, label: false, autofocus: false,placeholder: "Votre Email" %>
