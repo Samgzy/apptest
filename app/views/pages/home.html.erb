@@ -18,7 +18,7 @@
       </div>
       <div class="col-sm-4">
         <p class="text-center"> <%= image_tag 'size.svg', :class => 'img-home ' %> </p>
-        <p>Vous sélectionnez la taille de votre cadre parmi les nombreux formats disponibles pour l'impression.</p>
+        <p>Vous sélectionnez la taille de votre tirage parmi les nombreux formats disponibles pour l'impression.</p>
       </div>
       <div class="col-sm-4">
         <p class="text-center"> <%= image_tag 'truck.svg', :class => 'img-home' %> </p>
@@ -43,7 +43,8 @@
 <div class="wrapper-grey">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-sm-7 photo img-responsive ig-mayfair hidden-xs " style="background: url(<%= image_url('gallery.jpg')%>);"></div>
+      <div class="col-sm-7 photo img-responsive ig-mayfair hidden-xs " style="background: url(<%= image_url('gallery.jpg')%>);">
+      </div>
       <div class="col-sm-5">
         <div class="adjust">
           <h3 class="text-center">NOTRE SERVICE</h3><br>
@@ -56,24 +57,24 @@
     </div>
   </div>
 </div>
-<div class="container" id="block2">
+<div class="container">
   <div class="row padded">
     <div class="col-sm-6 col-sm-offset-3 wrapper-grey">
       <h3 class="text-center">NE RATEZ PAS NOTRE LANCEMENT !</h3><br>
         <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
         <%= f.error_notification %>
       <div class="form-group">
-        <%= f.input :firstname, required: true, label: false, autofocus: true,placeholder: "Votre Prénom" %>
+        <%= f.input :firstname, required: true, label: false, autofocus: false,placeholder: "Votre Prénom" %>
       </div>
       <div class="form-group">
-        <%= f.input :lastname, required: true, label: false, autofocus: true,placeholder: "Votre Nom" %>
+        <%= f.input :lastname, required: true, label: false, autofocus: false,placeholder: "Votre Nom" %>
       </div>
       <div class="form-group">
         <%= f.input :is_photograph, as: :radio_buttons, collection: [['Client', false],
         ['Photographe', true]], label: 'Vous êtes intéressé par notre plateforme entant que :' %>
       </div>
       <div class="form-group">
-        <%= f.input :email, required: true, label: false, autofocus: true,placeholder: "Votre Email" %>
+        <%= f.input :email, required: true, label: false, autofocus: false,placeholder: "Votre Email" %>
       </div>
       <div class="form-group">
           <%= f.input :password, required: true,label: false, placeholder: "Votre Mot de Passe",  hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length) %>
