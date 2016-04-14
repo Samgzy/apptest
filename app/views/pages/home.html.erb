@@ -62,7 +62,7 @@
     <div class="col-sm-6 col-sm-offset-3 wrapper-grey">
       <h3 class="text-center">NE RATEZ PAS NOTRE LANCEMENT !</h3><br>
         <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-        <%= f.error_notification %>
+        <%= devise_error_messages! %>
       <div class="form-group">
         <%= f.input :firstname, required: true, label: false, autofocus: false,placeholder: "Votre Prénom" %>
       </div>
