@@ -18,6 +18,7 @@ gem 'simple_form'
 gem 'autoprefixer-rails'
 gem 'devise-i18n'
 gem 'devise-i18n-views'
+gem 'postmark-rails', '>= 0.10.0'
 
 group :development, :test do
   gem 'binding_of_caller'
